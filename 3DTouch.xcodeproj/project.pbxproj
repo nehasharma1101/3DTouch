@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		912992B91F20B2B300F47012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912992B81F20B2B300F47012 /* AppDelegate.swift */; };
-		912992BB1F20B2B300F47012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912992BA1F20B2B300F47012 /* ViewController.swift */; };
 		912992BE1F20B2B300F47012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912992BC1F20B2B300F47012 /* Main.storyboard */; };
 		912992C01F20B2B300F47012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912992BF1F20B2B300F47012 /* Assets.xcassets */; };
 		912992C31F20B2B300F47012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912992C11F20B2B300F47012 /* LaunchScreen.storyboard */; };
+		912992CE1F20B34900F47012 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 912992CB1F20B34900F47012 /* notification.png */; };
+		912992CF1F20B34900F47012 /* Pop.png in Resources */ = {isa = PBXBuildFile; fileRef = 912992CC1F20B34900F47012 /* Pop.png */; };
+		912992D01F20B34900F47012 /* weight.png in Resources */ = {isa = PBXBuildFile; fileRef = 912992CD1F20B34900F47012 /* weight.png */; };
+		912992D31F20B4C000F47012 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912992D11F20B4C000F47012 /* DetailViewController.swift */; };
+		912992D41F20B4C000F47012 /* TouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912992D21F20B4C000F47012 /* TouchViewController.swift */; };
+		912992D61F20B59A00F47012 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912992D51F20B59A00F47012 /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		912992B51F20B2B300F47012 /* 3DTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912992B81F20B2B300F47012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		912992BA1F20B2B300F47012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		912992BD1F20B2B300F47012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		912992BF1F20B2B300F47012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		912992C21F20B2B300F47012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		912992C41F20B2B300F47012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		912992CB1F20B34900F47012 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
+		912992CC1F20B34900F47012 /* Pop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pop.png; sourceTree = "<group>"; };
+		912992CD1F20B34900F47012 /* weight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weight.png; sourceTree = "<group>"; };
+		912992D11F20B4C000F47012 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		912992D21F20B4C000F47012 /* TouchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchViewController.swift; sourceTree = "<group>"; };
+		912992D51F20B59A00F47012 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		912992B71F20B2B300F47012 /* 3DTouch */ = {
 			isa = PBXGroup;
 			children = (
+				912992CA1F20B33D00F47012 /* Images */,
 				912992B81F20B2B300F47012 /* AppDelegate.swift */,
-				912992BA1F20B2B300F47012 /* ViewController.swift */,
+				912992D11F20B4C000F47012 /* DetailViewController.swift */,
+				912992D21F20B4C000F47012 /* TouchViewController.swift */,
+				912992D51F20B59A00F47012 /* PhotoCollectionViewCell.swift */,
 				912992BC1F20B2B300F47012 /* Main.storyboard */,
 				912992BF1F20B2B300F47012 /* Assets.xcassets */,
 				912992C11F20B2B300F47012 /* LaunchScreen.storyboard */,
 				912992C41F20B2B300F47012 /* Info.plist */,
 			);
 			path = 3DTouch;
+			sourceTree = "<group>";
+		};
+		912992CA1F20B33D00F47012 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				912992CB1F20B34900F47012 /* notification.png */,
+				912992CC1F20B34900F47012 /* Pop.png */,
+				912992CD1F20B34900F47012 /* weight.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +148,10 @@
 			files = (
 				912992C31F20B2B300F47012 /* LaunchScreen.storyboard in Resources */,
 				912992C01F20B2B300F47012 /* Assets.xcassets in Resources */,
+				912992CF1F20B34900F47012 /* Pop.png in Resources */,
+				912992CE1F20B34900F47012 /* notification.png in Resources */,
 				912992BE1F20B2B300F47012 /* Main.storyboard in Resources */,
+				912992D01F20B34900F47012 /* weight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				912992BB1F20B2B300F47012 /* ViewController.swift in Sources */,
+				912992D31F20B4C000F47012 /* DetailViewController.swift in Sources */,
+				912992D61F20B59A00F47012 /* PhotoCollectionViewCell.swift in Sources */,
+				912992D41F20B4C000F47012 /* TouchViewController.swift in Sources */,
 				912992B91F20B2B300F47012 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
